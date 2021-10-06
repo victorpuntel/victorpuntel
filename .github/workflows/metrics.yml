@@ -24,3 +24,11 @@ jobs:
           # Language
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
+          
+  devcard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: devcard
+        uses: dailydotdev/action-devcard@2.0.2
+        with:
+          devcard_id: ${{ secrets.DEVCARD_ID }}
